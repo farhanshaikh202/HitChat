@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/msgviewleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bubble_left_background"
+        android:orientation="vertical" >
+        
+       <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+    	android:id="@+id/msgMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email|web|map"
+            android:linksClickable="true"
+            android:text="asdsad"
+            android:padding="2dp"
+            android:textSize="18dp"
+           emojicon:emojiconSize="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/msgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="2dp"
+            android:text="7:20 PM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#90000000" />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/msgviewright"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginLeft="50dp"
+    android:background="@drawable/bubble_right_background"
+    android:orientation="vertical" >
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+    android:id="@+id/msgMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_gravity="right"
+        android:autoLink="email|web|map"
+        android:padding="2dp"
+        android:text="asdsad fdfs dfsdf sdfsdfs f df"
+        android:linksClickable="true"
+        android:textSize="18dp"
+        emojicon:emojiconSize="20dp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right">
+
+        <TextView
+            android:id="@+id/msgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:20 PM"
+            android:padding="2dp"
+            android:textColor="#90000000"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_done_all_black_48dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

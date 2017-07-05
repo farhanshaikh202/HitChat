@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="1dip"
+        app:riv_border_color="#ccc"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:layout_margin="10dp"
+        android:id="@+id/user_image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitCenter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/avtar"/>
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farhan Shaikh"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/user_name_tv"
+        android:layout_toLeftOf="@+id/msg_count_tv"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_alignTop="@+id/user_image"
+        android:paddingTop="8dp" />
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:id="@+id/last_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="farhanshaikh202@gmail.com"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/msg_time_tv"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_below="@+id/user_name_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/msg_count_tv"
+        android:singleLine="true"
+        android:background="@drawable/count_bg"
+        android:textColor="#fff"
+        android:typeface="monospace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/msg_time_tv"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12:30 pm"
+        android:singleLine="true"
+        android:id="@+id/msg_time_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_alignBottom="@+id/user_image"
+        android:layout_alignTop="@+id/last_msg_tv" />
+</RelativeLayout>

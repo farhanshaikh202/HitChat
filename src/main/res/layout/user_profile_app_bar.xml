@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="1dip"
+        app:riv_border_color="#ccc"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:layout_margin="2dp"
+        android:id="@+id/user_image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitCenter"
+        android:layout_width="45dp"
+        android:src="@drawable/avtar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Farhan Shaikh"
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#fff"
+        android:id="@+id/user_name_tv"
+        android:layout_alignTop="@+id/user_image"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_weight="1" />
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:id="@+id/user_status_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="farhanshaikh202@gmail.com"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/msg_time_tv"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_alignBottom="@+id/user_image"
+        android:textColor="#ddd"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>
